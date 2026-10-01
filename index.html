@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Bellanochess Experience · Website Demos</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Jost:wght@400;500&display=swap">
+<style>
+:root{--ink:#1A1A1A;--off:#FEFFF9;--line:#E3E3E3}
+*{box-sizing:border-box}
+body{margin:0;background:var(--off);color:var(--ink);font-family:Jost,Futura,"Century Gothic",system-ui,sans-serif;padding:clamp(24px,6vw,72px) 16px}
+.wrap{max-width:1100px;margin:0 auto}
+.k{font-size:.78rem;letter-spacing:.42em;text-transform:uppercase;color:#6b6b6b}
+h1{font-family:Anton,Impact,sans-serif;font-weight:400;font-size:clamp(2.6rem,8vw,5.6rem);line-height:.92;text-transform:uppercase;margin:.6rem 0 1rem}
+h1 em{font-style:normal;color:transparent;-webkit-text-stroke:1.4px var(--ink)}
+p{max-width:52ch;line-height:1.6;color:#444;margin:0 0 2.4rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+a.card{display:flex;flex-direction:column;justify-content:space-between;min-height:260px;padding:26px;border-radius:8px;text-decoration:none;transition:transform .2s}
+a.card:hover{transform:translateY(-4px)}
+a.card:focus-visible{outline:3px solid var(--ink);outline-offset:4px}
+.card b{font-family:Anton,Impact,sans-serif;font-weight:400;font-size:2.2rem;text-transform:uppercase;line-height:1}
+.card span{font-size:.95rem;line-height:1.5}
+.card i{font-style:normal;font-size:.8rem;letter-spacing:.3em;text-transform:uppercase}
+.torn{background:#2D88BA;color:#EAF7F2}
+.mocha{background:#93254E;color:#ECCFB2}
+.lime{background:#1A1A1A;color:#BFE93F}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="k">Website demos</div>
+<h1>The Bellanochess <em>Experience</em></h1>
+<p>Three looks for the same site. Tap one to open the full demo, then try the Book buttons, the video row and the service menu.</p>
+<div class="grid">
+<a class="card torn" href="torn-paper/"><b>Torn Paper</b><span>Ocean blue, blush, periwinkle and plum with ripped-paper edges.</span><i>Open demo →</i></a>
+<a class="card mocha" href="mocha-magenta/"><b>Mocha &amp; Magenta</b><span>Sand and rose over cocoa, wine and magenta textures.</span><i>Open demo →</i></a>
+<a class="card lime" href="lime-noir/"><b>Lime Noir</b><span>Grey black, low green and off white with snakeskin.</span><i>Open demo →</i></a>
+</div>
+</div>
+</body>
+</html>
